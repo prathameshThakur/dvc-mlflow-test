@@ -1,4 +1,4 @@
 [core]
     remote = gdrive-dvc-test
 ['remote "gdrive-dvc-test"']
-    url = gdrive://1lSZeodO218YodQJQWZBk2lX0QQIMatny
+    url = C:/Users/THAKUR/Documents/dvc-tmp-remote
