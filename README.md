@@ -140,8 +140,22 @@ The simplest way to switch between the different versions of your data will be b
 ```bash
 git tag -a <tag name> -m "tag description!"
 ```
+### 6. Push the updates
+after the .dvc file is commited now its ready to be pushed 
+```bash
+dvc push
+```
+This will create new directory in the remote dvc location;
+and now push the changes into github repo 
+```bash
+git push
+```
+also we need to push the individual tag
+```bash
+git push origin main <tag name>
+```
 
-#### You can repeate the step 4 & 5 for every change you make in the tracked data!
+#### You can repeate the step 4, 5 & 6 for every change you make in the tracked data!
 
 ## Code space
 In the `train.py` we have a small code snippet for getting the url of the actual data tracked by DVC by using `get_url` fn in dvc package, it will simply return the url for the remote storage/path in which the file/data is  stored.
